@@ -1,12 +1,11 @@
 import angular from '@analogjs/vite-plugin-angular';
 import path from 'node:path';
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
 
 // isolate: false shares one module registry across spec files: much faster, at the cost of
 // vi.mock(), which nothing here needs.
 export default defineConfig({
   plugins: [ angular({ tsconfig: path.resolve(import.meta.dirname, 'tsconfig.spec.json') }) ],
-  resolve: { tsconfigPaths: true },
   test: {
     globals: true,
     environment: 'jsdom',

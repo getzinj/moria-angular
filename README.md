@@ -16,7 +16,7 @@ the findings along the way are in [`docs/port-plan.md`](docs/port-plan.md).
 
 ## Running
 
-Node 24 or later.
+Node 24.15 or later (or 26).
 
 ```sh
 npm ci
@@ -27,8 +27,11 @@ npm run e2e         # Playwright: starts the dev server itself
 npm run build       # dist/moria/browser
 ```
 
-Pushes to `main` are linted, tested, built and deployed to GitHub Pages by
-`.github/workflows/deploy.yml`. Pull requests get the lint and tests.
+Every pull request and push is linted, tested and built by
+`.github/workflows/deploy.yml`; pushes to `main` are then deployed to GitHub
+Pages. The site is built for a domain root, so Pages needs its source set to
+"GitHub Actions" and its custom domain set to `moria.stonequest.org` in the
+repository settings: a deploy from Actions ignores `public/CNAME`.
 
 ## Keys
 

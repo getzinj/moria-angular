@@ -30,5 +30,5 @@ conventions, and docs/port-plan.md for the history.
 - Explicit access modifiers (`public`/`private`/`protected`) on all class members; omit `public` only on constructors.
 - Prefer `inject()` over constructor-parameter injection in Angular classes.
 - `readonly` for injected dependencies and any field that isn't reassigned after construction.
-- Single quotes, semicolons, 2-space indentation, trailing commas in multiline literals — enforced by `.editorconfig` and ESLint (no Prettier in this repo).
+- Single quotes, semicolons, 2-space indentation, trailing commas in multiline literals. `.editorconfig` covers the whitespace and quotes; there is no Prettier.
 - Use `import type` for type-only imports.
