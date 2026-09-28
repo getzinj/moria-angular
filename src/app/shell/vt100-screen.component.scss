@@ -1,0 +1,23 @@
+@use '../../styles/terminal';
+
+:host {
+  display: block;
+}
+
+.screen {
+  @include terminal.scaled-font;
+  width: fit-content;
+  margin: 0 auto;
+  color: terminal.$crt-green;
+  background: terminal.$crt-background;
+}
+
+.row {
+  white-space: pre;
+  height: 1em;
+}
+
+.cursor {
+  color: terminal.$crt-background;
+  background: terminal.$crt-green;
+}

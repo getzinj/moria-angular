@@ -1,0 +1,5 @@
+<div class="screen" role="region" aria-label="Moria terminal">
+  @for (line of lines(); track $index) {
+    <div class="row">{{ line.before }}@if (line.hasCursor) {<span class="cursor">{{ line.cursor }}</span>}{{ line.after }}</div>
+  }
+</div>

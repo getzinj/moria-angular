@@ -1,0 +1,17 @@
+Moria for the browser
+Copyright (C) 2026 Jeffrey Getzin
+
+The GNU General Public License, version 3 (see LICENSE), is granted for the
+original work of the author of this port only: the Angular shell, the terminal
+and runtime emulation, the tooling, and the tests.
+
+Everything in this repository that is ported, translated or extracted from VMS
+Moria 4.8 - the game logic, its data tables, its messages and its help text -
+is the work of Robert Alan Koeneke, Jimmey Wayne Todd and Gary D. McAdoo. The
+upstream repository (https://github.com/dungeons-of-moria/vms-moria) states no
+licence for that work, so no licence to it is granted here. It remains under
+whatever terms its authors hold, and nothing in this repository's LICENSE
+extends to it.
+
+The VT220 webfont in public/fonts/ is a modified Glass TTY VT220, from
+https://caglrc.cc/~svo/glasstty/, and is not covered by LICENSE either.

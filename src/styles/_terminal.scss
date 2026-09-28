@@ -1,0 +1,18 @@
+// The look copied from Stonequest-Angular (github.com/getzinj/Stonequest-Angular): its
+// $crt_green on black, and the 80x24 scaling of its _fonts.scss without the toolbar and automap.
+@use 'sass:math';
+
+$crt-green: #6e8d3b;
+$crt-background: black;
+
+$font-width-to-height-ratio: math.div(20, 8);
+
+@mixin scaled-font() {
+  font-family: 'vt220', 'Courier New', monospace;
+  font-size: min((#{ $font-width-to-height-ratio } * (100vw / 80)), (100vh / 24));
+  line-height: 1;
+  letter-spacing: -0.1em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
