@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+coverage/
+tmp/
+.angular/
+
+# Playwright
+e2e/test-results/
+e2e/playwright-report/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,19 @@
+@use './styles/terminal';
+
+@font-face {
+  font-family: 'vt220';
+  src: url('/fonts/glass_tty_vt220_-_modified-webfont.woff2') format('woff2'),
+  url('/fonts/glass_tty_vt220_-_modified-webfont.woff') format('woff');
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  background: terminal.$crt-background;
+  overflow: hidden;
+}
